@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"..."
+		]
+	},
+	"skinname-entropialanding": "{{optional}}",
+	"entropialanding-desc": "{{desc|what=skin|name=EntropiaLanding|url=https://www.mediawiki.org/wiki/Skin:EntropiaLanding}}",
+	"entropialanding-no-categories": "Message to show when no categories available"
+}

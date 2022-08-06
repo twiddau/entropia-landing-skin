@@ -1,0 +1,84 @@
+{
+	"name": "EntropiaLanding",
+	"version": "1.0.0",
+	"author": [
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:EntropiaLanding",
+	"descriptionmsg": "entropialanding-skin-desc",
+	"namemsg": "skinname-entropialanding",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"entropialanding": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "entropialanding",
+					"responsive": true,
+					"toc": false,
+					"messages": [
+						"entropialanding-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.entropialanding.styles"
+					],
+					"scripts": [
+						"skins.entropialanding"
+					]
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"EntropiaLanding": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.entropialanding.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content-tables": true,
+				"content-links": true,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": true,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/skin.less"
+			]
+		},
+		"skins.entropialanding": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "EntropiaLanding"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}
